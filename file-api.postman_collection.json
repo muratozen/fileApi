@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "72c4942c-9312-478b-b031-510d1b54d5f6",
+		"name": "file-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13868583"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/file-api/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file-api",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/lenovo/Downloads/test - Wed Jul 26 15_18_10 EET 2023.xls"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/file-api/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file-api",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/file-api/delete?uuid=392c9d18-4139-4429-b235-2d78496916fe",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file-api",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "392c9d18-4139-4429-b235-2d78496916fe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uuid",
+							"value": "0a35fa43-d310-412e-b52b-909180139447",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/lenovo/Downloads/Başarısız Findeks Rapor Sonuçları - 2023-07-26 (1).xls"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/file-api/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file-api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth save",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getFileToByte",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
